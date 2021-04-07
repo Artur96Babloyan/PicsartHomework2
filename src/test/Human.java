@@ -1,58 +1,59 @@
 package test;
 
 public class Human {
-    public String firstName;
-    public String lastName;
-    public String fullname;
+    private String firstName;
+    private String lastName;
+    private String fullname;
     private int age;
-    public String gender;
-    public boolean isArmenian;
+    private String gender;
+    private boolean isArmenian;
 
-
-    public void setFirstName(String n) {
-        firstName = n;
-    }
 
     public String getFirstName() {
         return firstName;
     }
 
-    public void setLastName(String l) {
-        firstName = l;
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
     }
 
     public String getLastName() {
         return lastName;
     }
 
-    public void setGender(String g) {
-        gender = g;
-    }
-
-    public String getGender() {
-        return gender;
-    }
-
-    public void setFullname(String n, String l) {
-        fullname = n + "  " + l;
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
     }
 
     public String getFullname() {
         return fullname;
     }
 
-    public void setAge(int a) {
-        if (a > 0 && a <= 150) {
-            age = a;
-        } else {
-            System.out.println("Invalid age");
-        }
-
+    public void setFullname(String firstName , String lastName ) {
+        this.fullname = firstName + "  " +  lastName;
     }
 
     public int getAge() {
         return age;
     }
 
+    public void setAge(int age) {
+        this.age = age;
+    }
 
+    public String getGender() {
+        return gender;
+    }
+
+    public void setGender(String gender) {
+        this.gender = gender;
+    }
+
+    public boolean isArmenian() {
+        return isArmenian;
+    }
+
+    public void setArmenian(boolean armenian) {
+        isArmenian = armenian;
+    }
 }
